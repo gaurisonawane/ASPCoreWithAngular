@@ -1,0 +1,13 @@
+<h1>Inventory Item Details</h1>
+
+<p *ngIf="!item"><em>Loading...</em></p>
+
+<p>
+    <a [routerLink]="['/register-item']">Create New</a>
+</p>
+
+
+<div *ngIf="item">
+  <h3>Name: {{ item.Name }}</h3>
+  <h3>Price: {{ item.Price}}</h3>
+</div>
