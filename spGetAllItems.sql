@@ -1,0 +1,6 @@
+CREATE PROCEDURE spGetAllItems
+AS
+BEGIN
+SELECT * FROM Txn_InventoryItems
+ORDER BY ItemId
+END
